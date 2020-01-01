@@ -1,5 +1,7 @@
 # pelican-jupyter-reader: A Plugin for Pelican
 
+[![PyPI version](https://badge.fury.io/py/pelican-jupyter-reader.svg)](https://badge.fury.io/py/pelican-jupyter-reader)
+
 Reader for ipynb files
 
 Installation
