@@ -32,16 +32,14 @@ class JupyterReader(BaseReader):
     @staticmethod
     def add_filename_prefix_to_content(outputs: Sequence[dict], body: str) -> str:
 
-        body_new = body.copy()
-
         def add_pelican_static_prefix(body: str, src_value: str) -> str:
             body_w_prefix = body.replace(src_value, '{filename}%s' % src_value)
             return body_w_prefix
 
         for output in outputs:
-            body_new = self.add_pelican_static_prefix(body_new, output)
+            body = add_pelican_static_prefix(body, output)
 
-        return body_new
+        return body
 
     def read(self, source_path: str) -> Tuple[str, dict]:
 
