@@ -33,7 +33,7 @@ class JupyterReader(BaseReader):
     def add_filename_prefix_to_content(outputs: Sequence[dict], body: str) -> str:
 
         def add_pelican_static_prefix(body: str, src_value: str) -> str:
-            body_w_prefix = body.replace(src_value, '{filename}%s' % src_value)
+            body_w_prefix = body.replace(src_value, '{static}%s' % src_value)
             return body_w_prefix
 
         for output in outputs:
@@ -50,17 +50,8 @@ class JupyterReader(BaseReader):
 
             notebook_node = nbformat.reads(text, as_version=4)
 
-            c = Config()
-            c.HTMLExporter.template_file = 'basic'
-            c.HTMLExporter.preprocessors = [
-                'nbconvert.preprocessors.ExtractOutputPreprocessor',
-                'nbconvert.preprocessors.HighlightMagicsPreprocessor',
-            ]
-            c.ExtractOutputPreprocessor.output_filename_template = \
-                'images/%s_{cell_index}_{index}{extension}' % output_key
-
+            c = self.settings.get('NBCONVERT_CONFIG', Config())
             html_exporter = HTMLExporter(c)
-
             (body, resources) = html_exporter.from_notebook_node(notebook_node)
 
             outputs = resources['outputs']
