@@ -1,11 +1,13 @@
-import nbformat
-from nbconvert import HTMLExporter
 import os
+from typing import Sequence, Tuple
+
+from nbconvert import HTMLExporter
+import nbformat
+from traitlets.config import Config
+
 from pelican import signals
 from pelican.readers import BaseReader
 from pelican.utils import pelican_open
-from typing import Tuple, Sequence
-from traitlets.config import Config
 
 
 class JupyterReader(BaseReader):
