@@ -15,7 +15,7 @@ This plugin can be installed via:
 
     pip install pelican-jupyter-reader
 
-Quckstart
+Quickstart
 ---------
 
 - Add the plugin to `pelicanconf.py`:
