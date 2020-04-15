@@ -4,7 +4,7 @@ pelican-jupyter-reader: A Plugin for Pelican
 [![PyPI version](https://badge.fury.io/py/pelican-jupyter-reader.svg)](https://badge.fury.io/py/pelican-jupyter-reader)
 
 This [Pelican](http://docs.getpelican.com/en/latest/index.html) plugin provides a Jupyter Notebook (i.e. `*.ipynb`) reader.
-The plugin indends to allow users to simply drop Jupyter notebooks in their
+The plugin intends to allow users to simply drop Jupyter notebooks in their
 Pelican content directory and have the notebooks rendered (beautifully) in a Pelican
 static website.
 
@@ -62,7 +62,8 @@ The Jupyter nbconvert configuration for
 and the
 [HTMLExporter](https://github.com/jupyter/nbconvert/blob/5.x/nbconvert/exporters/html.py)
 are exposed in your Pelican config, `pelicanconf.py`.  This
-means you can do some useful manipulation of your notebooks while reading.
+means you can do some useful manipulation of your notebooks while reading with some 
+utilities provided by `nbconvert`.
 
 For example, to use the `basic` template for the `HTMLExporter`, you could add
 the following to your `pelicanconf.py`:
