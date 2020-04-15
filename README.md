@@ -50,7 +50,7 @@ PLUGINS = [pelican_jupyter_reader]
 //...
 ```
 
-- Drop your Jupyter notebook in the pelican content directory, build your site,
+- Drop your Jupyter notebook in the Pelican content directory, build your site,
   and deploy!  :rocket:
 
 
