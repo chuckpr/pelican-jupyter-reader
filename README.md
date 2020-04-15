@@ -62,7 +62,7 @@ The Jupyter nbconvert configuration for
 and the
 [HTMLExporter](https://github.com/jupyter/nbconvert/blob/5.x/nbconvert/exporters/html.py)
 are exposed in your Pelican config, `pelicanconf.py`.  This
-means you can do some manipulate of your notebooks with utilities provided by `nbconvert`.
+means you can do manipulate notebooks with utilities provided by `nbconvert`.
 
 For example, to use the `basic` template for the `HTMLExporter`, you could add
 the following to your `pelicanconf.py`:
