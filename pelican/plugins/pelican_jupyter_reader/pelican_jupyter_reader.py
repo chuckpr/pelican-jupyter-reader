@@ -14,12 +14,6 @@ class JupyterReader(BaseReader):
     file_extensions = ['ipynb']
 
     @staticmethod
-    def _generate_output_key(source_path: str) -> str:
-        basename = os.path.basename(source_path)
-        output_key = os.path.splitext(basename)[0]
-        return output_key
-
-    @staticmethod
     def _write_outputs(outputs: dict, source_dir: str) -> None:
         images_dir = os.path.join(source_dir, 'images')
         if not os.path.exists(images_dir):
@@ -44,7 +38,6 @@ class JupyterReader(BaseReader):
     def read(self, source_path: str) -> Tuple[str, dict]:
 
         source_dir = os.path.dirname(source_path)
-        output_key = self._generate_output_key(source_path)
 
         with pelican_open(source_path) as text:
 
