@@ -31,7 +31,7 @@ PLUGINS = [pelican_jupyter_reader]
 - Provide [Pelican post
   metadata](http://docs.getpelican.com/en/latest/content.html#file-metadata) as
   a top-level object with key `pelican` in the Jupyter notebook metadata:
-```json
+```javascript
 {
     "pelican": {
         "date": "2020-04-10",
@@ -47,7 +47,7 @@ PLUGINS = [pelican_jupyter_reader]
         "language": "python",
         "name": "python3"
     },
-//...the rest of the notebook follows here.
+//...the rest of the notebook JSON follows.
 ```
 
 - Drop your Jupyter notebook in the Pelican content directory, build your site,
