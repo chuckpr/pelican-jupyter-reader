@@ -1,0 +1,4 @@
+[build]
+  base = "demo"
+  publish = "demo/output"
+  command = "invoke build"
