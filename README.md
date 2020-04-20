@@ -16,7 +16,7 @@ This plugin can be installed via:
     pip install pelican-jupyter-reader
 
 Quickstart
----------
+----------
 
 - Add the plugin to `pelicanconf.py`:
 ```python
@@ -47,11 +47,20 @@ PLUGINS = [pelican_jupyter_reader]
         "language": "python",
         "name": "python3"
     },
-//...
+//...the rest of the notebook follows here.
 ```
 
 - Drop your Jupyter notebook in the Pelican content directory, build your site,
   and deploy!  :rocket:
+
+
+Example
+-------
+
+The [demo/](https://github.com/chuckpr/pelican-jupyter-reader/tree/master/demo)
+directory has a simple post with corresponding configuration in
+`pelicanconf.py`. The demo site is deployed
+[here](https://peaceful-jang-e394ce.netlify.app).
 
 
 Notes
