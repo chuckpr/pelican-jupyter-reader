@@ -87,8 +87,7 @@ option to `pelicanconf.py`:
 
 ```python
 # ...
-NBCONVERT_CONFIG.RegexRemovePreprocessor.patterns = \
-    ['\\s*\\Z']
+NBCONVERT_CONFIG.RegexRemovePreprocessor.patterns = ['\\s*\\Z']
 ```
 
 Other `nbconvert` configuration options can be found
