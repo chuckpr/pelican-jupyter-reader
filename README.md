@@ -2,6 +2,7 @@
 ---------------------------------------------
 
 [![PyPI version](https://badge.fury.io/py/pelican-jupyter-reader.svg)](https://badge.fury.io/py/pelican-jupyter-reader)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a92deaef-8ffb-4d11-a941-358ac92e3500/deploy-status)](https://app.netlify.com/sites/peaceful-jang-e394ce/deploys)
 
 This [Pelican](http://docs.getpelican.com/en/latest/index.html) plugin provides a Jupyter Notebook (i.e. `*.ipynb`) reader.
 The plugin intends to allow users to simply drop Jupyter notebooks in their
