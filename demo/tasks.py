@@ -81,10 +81,12 @@ def livereload(c):
     server = Server()
     # Watch the base settings file
     server.watch(CONFIG['settings_base'], lambda: build(c))
+    # Watch custom nbconvert template
+    server.watch('demo.tpl')
     # Watch content source files
-    content_file_extensions = ['.md', '.rst']
+    content_file_extensions = ['.md', '.rst', '.ipynb']
     for extension in content_file_extensions:
-        content_blob = '{0}/**/*{1}'.format(SETTINGS['PATH'], extension)
+        content_blob = '{0}/*{1}'.format(SETTINGS['PATH'], extension)
         server.watch(content_blob, lambda: build(c))
     # Watch the theme's templates and static assets
     theme_path = SETTINGS['THEME']
