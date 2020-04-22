@@ -43,10 +43,14 @@ class JupyterReader(BaseReader):
         with pelican_open(source_path) as text:
 
             notebook_node = nbformat.reads(text, as_version=4)
+            notebook_name = os.path.basename(source_path)
+            notebook_name = os.path.splitext(notebook_name)[0]
+            nb_resources = dict(unique_key=notebook_name)
 
             c = self.settings.get("NBCONVERT_CONFIG", Config())
             html_exporter = HTMLExporter(c)
-            (body, resources) = html_exporter.from_notebook_node(notebook_node)
+            (body, resources) = html_exporter.from_notebook_node(notebook_node,
+                                                                 nb_resources)
 
             outputs = resources["outputs"]
             if outputs:
