@@ -59,3 +59,6 @@ NBCONVERT_CONFIG.HighlightMagicsPreprocessor.enabled = True
 NBCONVERT_CONFIG.HTMLExporter.template_path.append('.')
 NBCONVERT_CONFIG.HTMLExporter.template_file = 'demo'
 
+NBCONVERT_CONFIG.ExtractOutputPreprocessor.enabled = True
+NBCONVERT_CONFIG.ExtractOutputPreprocessor.output_filename_template = \
+    'images/{unique_key}_{cell_index}_{index}{extension}'
