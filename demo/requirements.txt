@@ -20,7 +20,7 @@ nbformat==4.4.0
 pandocfilters==1.4.2
 pelican==4.2.0
 pelican-jupyter-reader==0.3.1
-Pygments==2.6.1
+Pygments==2.7.4
 pyrsistent==0.16.0
 python-dateutil==2.8.1
 pytz==2019.3
