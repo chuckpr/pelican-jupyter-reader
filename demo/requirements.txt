@@ -15,7 +15,7 @@ livereload==2.6.1
 Markdown==3.2.1
 MarkupSafe==1.1.1
 mistune==0.8.4
-nbconvert==5.6.1
+nbconvert==6.3.0
 nbformat==4.4.0
 pandocfilters==1.4.2
 pelican==4.2.0
