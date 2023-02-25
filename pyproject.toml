@@ -35,11 +35,11 @@ classifiers = [
 "Tracker" = "https://github.com/chuckpr/pelican-jupyter-reader/issues"
 
 [tool.poetry.dependencies]
-python = "^3.6"
-pelican = "^4.2"
-markdown = {version = "^3.1.1",optional = true}
-nbconvert = "^5.6.1"
-nbformat = "^4.4.0"
+python = "^3.11"
+pelican = "^4.8"
+markdown = {version = "^3.4.1",optional = true}
+nbconvert = "^7.2.9"
+nbformat = "^5.7.3"
 
 [tool.poetry.dev-dependencies]
 black = {version = "^19.10b0",allow-prereleases = true}

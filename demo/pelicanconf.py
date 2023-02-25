@@ -56,8 +56,8 @@ NBCONVERT_CONFIG.HighlightMagicsPreprocessor.enabled = True
 
 # This directs the NBConvert to a custom Jinja2 template
 # names demo.tpl
-NBCONVERT_CONFIG.HTMLExporter.template_path.append('.')
-NBCONVERT_CONFIG.HTMLExporter.template_file = 'demo'
+NBCONVERT_CONFIG.HTMLExporter.extra_template_basedirs.append('.')
+NBCONVERT_CONFIG.HTMLExporter.template_name = 'demo'
 
 NBCONVERT_CONFIG.ExtractOutputPreprocessor.enabled = True
 NBCONVERT_CONFIG.ExtractOutputPreprocessor.output_filename_template = \
