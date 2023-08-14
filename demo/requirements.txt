@@ -26,7 +26,7 @@ python-dateutil==2.8.1
 pytz==2019.3
 six==1.14.0
 testpath==0.4.4
-tornado==6.0.4
+tornado==6.3.3
 traitlets==4.3.3
 Unidecode==1.1.1
 webencodings==0.5.1
